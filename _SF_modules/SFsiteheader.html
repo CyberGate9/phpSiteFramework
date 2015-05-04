@@ -1,0 +1,54 @@
+<!doctype html public "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang="English">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+		<title><?php echo SF_GetPageTitle(); ?></title>
+    <?php echo "<link href=\"".SF_GetCSSFilename()."\" rel=\"stylesheet\" type=\"text/css\">"; ?>
+    <?php echo "<link rel=\"alternate stylesheet\" type=\"text/css\" media=\"screen\" href=\"".$SF_moduleswebpath."smalltext.css\" rel=\"stylesheet\" title=\"Small Text\" >"; ?>
+</head>
+<body>
+<!-- defines the accessibility access keys on every page -->
+<a class="hiddenStructure" accesskey="0" href="<?php echo $SF_sitewebpath;?>siteframework/accessibility.html"></a>
+<a class="hiddenStructure" accesskey="1" href="<?php echo $SF_sitewebpath;?>siteframework/index.html"></a>
+<a class="hiddenStructure" accesskey="2" href="<?php echo $_SERVER['PHP_SELF']."#SF_content";?>"></a>
+<a class="hiddenStructure" accesskey="3" href="<?php echo $SF_sitewebpath;?>siteframework/sitemap.html"></a>
+
+<table width="795" border="0" align="center" cellpadding="0" cellspacing="0">
+<COLGROUP span="1" width="140">
+<COLGROUP span="1" width="25">
+<COLGROUP span="1" width="630">
+<tr><td colspan="3">
+
+
+<p class="SF_site_header_optionstext">[<a href="<?php echo $SF_sitewebpath;?>siteframework/accessibility.html">Accessibility</a>]&nbsp;&nbsp;&nbsp;
+[<a href="<?php echo $SF_sitewebpath;?>siteframework/sitemap.html">SiteMap</a>]
+&nbsp;&nbsp;&nbsp;[<a href="<?php echo $SF_sitewebpath;?>siteframework/search.html">Search</a>]
+
+<?php /*<-- a href="javascript:setActiveStyleSheet('Small Text',1);" title="Small Text">Small</a>*/ ?> </p></tr>
+<tr><td colspan="3">
+<span class="SF_site_header_heading">Site Framework</span><hr size="1"/>
+</tr>
+<tr><td colspan="3"><?php SF_GenerateBreadCrumbLine(); ?></tr>
+  <tr>
+  <td valign="top">
+  <!-- the next table is just to do an absolute width on the navbar of 160 pixels -->
+  <table width="140" border="0"><tr><td></td></tr></table>
+  <?php SF_GenerateNavigationMenu(); ?><br/>
+  <div align="center">
+  <img src="<?php echo $SF_moduleswebpath;?>logos/sflogo_sml.gif"><br/>
+  Site Framework<br/>
+  </div>
+  
+  </td>
+
+  <td valign="top">
+  <!-- the next table is just to do an absolute width on the spacer column of 15 pixels -->
+  <table width="15" border="0"><tr><td></td></tr></table>
+  </td>
+  <td valign="top">
+  <p class="SF_site_content_optionstext">
+[<a href="<?php echo $SF_moduleswebpath."SF_printview.php?".$_SERVER['PHP_SELF']; ?>">Print</a>]
+</p>
+  <a name="SF_content"></a>
+  <!-- content will begin here -->
+  <div id="content" class="body">

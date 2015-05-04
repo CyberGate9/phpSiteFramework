@@ -1,0 +1,44 @@
+</div>
+<br/>
+</td>
+</tr>
+
+<tr><td colspan="3">
+<p class="SF_content_footertext" align="right">
+<?php 
+if(!array_key_exists('displaydate',$SF_commands) ) /* if its no declared display */
+{ /* the default (even if key doesnt exist) is to output the updated: xxXXXxxx */
+echo 'Updated: '.SF_GetPageModifiedDate("","jMY").'';
+}
+else
+{
+if(strcmp($SF_commands['displaydate'],'on')){}
+}
+if(array_key_exists('meta_author',$SF_commands)) /* if its no declared display */
+{
+echo '<br/>Author: '.$SF_commands['meta_author'];
+}
+?>
+</p>
+</td>
+</tr>
+
+<!-- SF_Command:content:ends -->
+<tr>
+<td colspan="3">
+<hr size="1"/>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<p class="SF_footer_text"><a href="http://www.fitzmuseum.cam.ac.uk/projects/phpsiteframework/">phpSiteFramework</a> powered.</p>
+</td>
+</tr>
+<!-- /div -->
+</table>
+<div id="SF_footerarea" class="SF_footerarea" -->
+</div>
+</body>
+</html>
+
+

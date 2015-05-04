@@ -1,0 +1,4 @@
+MENUSET name,MENUSUBSET name,Title,Order,URL (from SF (sub)siteroot - should not contain leading slashes)
+site,_toplevel,Home,0,index.html
+site,_toplevel,Accessibility,11,accessibility.html
+site,_toplevel,Site Map,12,sitemap.html

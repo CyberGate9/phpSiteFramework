@@ -1,0 +1,9 @@
+<!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML V4.1//EN" "/usr/share/sgml/db41xml/docbookx.dtd" []>
+<book>
+  <bookinfo>
+  <title>Welcome to SiteFramework!</title>
+  <para>This is the SiteFramework (SF) technical documentation.</para>
+  <para>This document is intended for anyone who wants to customise a SF installation by using the functions supplied by SF in headers and footers etc.</para>
+  <para>My suggestion is you start with the the SiteFramework overview documentation and just use this documentation as reference when you can't work something out in the example templates etc.</para>
+  </bookinfo>
+</book>

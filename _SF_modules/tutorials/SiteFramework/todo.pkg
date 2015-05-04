@@ -1,0 +1,7 @@
+<!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML V4.1//EN" "/usr/share/sgml/db41xml/docbookx.dtd" []>
+<book>
+  <bookinfo>
+  <title>To-Do</title>
+  <para>This documentation is not yet complete; Im still working out the finer points of PHPDocumentor and getting through the documentation for the functions; hopefully the documentation is just enough to get you started at the moment.</para><para>Shaun Osborne, 17Oct2005.</para>
+  </bookinfo>
+</book>

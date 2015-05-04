@@ -1,0 +1,81 @@
+<?php
+  echo '<?xml version="1.0" encoding="utf-8"?>'; 
+  $SF_sitetitle='SF Demo Site';
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+<meta http-equiv="Content-Language" content="en"/>
+<?php
+  include($SF_modulesdrivepath."SF_defaultmetadata.html");
+?>
+<title><?php echo SF_GetPageTitle(GPT_BREADCRUMB); ?></title>
+<?php
+  /* to make CSS cascade/combine they must be titled the same */
+  echo "<link href=\"".SF_GetDefaultCSSFilename()."\" rel=\"stylesheet\" title=\"SF_CSS\" type=\"text/css\"/>";
+  echo "<link href=\"".SF_GetCSSFilename()."\" rel=\"stylesheet\" title=\"SF_CSS\" type=\"text/css\"/>"; 
+?>
+</head>
+<body>
+<!-- SwishCommand noindex -->
+<div id="SF_headerarea" class="SF_headerarea">
+<table width="765" align="center"  cellpadding="0" cellspacing="0" summary="this table is used for header layout">
+<tr>
+<td colspan="3">
+<p class="SF_header_optionstext">
+<!-- defines the accessibility access keys on every page -->
+<a href="<?php echo $_SERVER['PHP_SELF']."#SF_content";?>" accesskey="S" ><img src="<?php echo $SF_moduleswebpath;?>images/1x1transparent.gif" style="border: 0px;" alt="accesskey S - Skip to content"/></a>
+<a href="<?php echo $SF_sitewebpath;?>index.html" accesskey="1" ><img src="<?php echo $SF_moduleswebpath;?>images/1x1transparent.gif" style="border: 0px;" alt="accesskey 1 - Home"/></a>
+<a href="<?php echo $SF_sitewebpath;?>accessibility.html" accesskey="0"><img src="<?php echo $SF_moduleswebpath;?>images/1x1transparent.gif" style="border: 0px;" alt="accesskey 0 - Accessibility Information"/></a>
+<a href="<?php echo SF_GetTextOnlyURL() ?>">Text only</a>&nbsp;&nbsp;
+<a href="<?php echo $SF_sitewebpath;?>accessibility.html">Accessibility</a>&nbsp;&nbsp;
+<a href="<?php echo $SF_sitewebpath;?>sitemap.html" accesskey="3" >SiteMap</a>
+</p>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<span class="SF_header_heading"><?php echo $SF_sitetitle.' - '; echo SF_GetPageTitle("page"); ?></span>
+<hr size="1" style="margin: 0px 0px -5px 0xp;"/>
+</td>
+</tr>
+<tr>
+<td colspan="3"><?php SF_GenerateBreadCrumbLine(); ?>
+<hr size="1" style="margin: -2px 0px 0px 0xp;"/>
+</td>
+</tr>
+</table>
+</div>
+<div id="SF_bodyarea" class="SF_bodyarea">
+<table width="765" align="center" cellpadding="0" cellspacing="0" summary="this table is used for page layout">
+<tr>
+<td valign="top">
+
+<!-- the next table is just to do an absolute width on the navmenu area of of 145 pixels -->
+<table width="145" border="0" cellpadding="0" cellspacing="0" summary="this table is for page layout"><tr><td></td></tr></table>
+
+<?php SF_GenerateNavigationMenu(); ?><br/>
+<img src="<?php echo $SF_moduleswebpath;?>images/sflogo_sml.gif" alt="Photo: Fitzwilliam Museum Front Entrance"/>
+<br/>
+<br/>
+</td>
+<td valign="top">
+
+<!-- the next table is just to do an absolute width on the spacer column of 25 pixels -->
+<table width="25" border="0" cellpadding="0" cellspacing="0" summary="this table is for page layout"><tr><td></td></tr></table>
+</td>
+<td valign="top" align="left">
+<!-- the next table is just to do an absolute width on the content column of 590 pixels -->
+<table width="600" border="0" cellpadding="0" cellspacing="0" summary="this table is for page layout"><tr><td></td></tr></table>
+<!-- SF_Command:content:begins -->
+<div id="SF_contentarea">
+<table width="100%" border="0" cellpadding="0" cellspacing="0" summary="this table is for page layout">
+<tr><td>
+<p class="SF_content_headertext">[<a href="<?php echo SF_GetPrintURL(); ?>">Print</a>]</p>
+</td></tr></table>
+<!-- SwishCommand index -->
+<a name="SF_content"></a>
+
+
+

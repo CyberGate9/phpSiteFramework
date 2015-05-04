@@ -1,0 +1,3 @@
+dir (from SF siteroot should have both leading and trailing slashes),directory config file (from (sub)site root)
+/,
+/demo1/,_SF_config/demo1_config_dir.csv

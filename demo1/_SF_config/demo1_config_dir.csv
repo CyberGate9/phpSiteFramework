@@ -1,0 +1,3 @@
+dir (from (sub)site root),menufile,menuset,submenu to open,css,header file,footer file,content pp?,e
+/,_SF_config/demo1_config_menu.csv,site,home,_SF_config/demo1.css,_SF_config/demo1_header.html,_SF_config/demo1_footer.html,yes,e
+features/,,site,features,,,,,

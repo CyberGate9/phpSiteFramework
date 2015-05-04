@@ -1,0 +1,69 @@
+<?php require_once("../SF_mainmodule.php"); 
+require_once("../SF_cacheconfig.php"); 
+?>
+
+<html>
+<head>
+<link href="../SF_default.css" rel="stylesheet" type="text/css">
+</head>
+<h1><img src="<?php echo $SF_moduleswebpath;?>images/sflogo_sml.gif"/>&nbsp;Site Framework Admin Info Page</h1>
+<hr size="1"/>
+<a href="SF_phpinfo.php">PHP Info</a></p>
+<hr size="1"/>
+<h1>Site Framework Internal Values</h1>
+<?php
+echo "<p>VERSION:[$sfversion]</p>";
+echo "<p>\$SF_sitewebpath = [$SF_sitewebpath]</p>";
+echo "<p>\$SF_moduleswebpath = [$SF_moduleswebpath]</p>";
+echo "<p>\$SF_sitetile = [$SF_sitetitle]</p>";
+?>
+<hr size="1"/>
+<h1>Site Framework Caching</h1>
+<?php
+echo "<p>SF_Caching:[$SF_caching] (1=on, 0=off)</p>";
+echo '<p>$SF_cacheoptions = ['.print_r($SF_cacheoptions,true).']</p>';
+echo '<p>$SF_cacheexcludes = ['.print_r($SF_cacheexcludes,true).']</p>';
+?>
+<hr size="1"/>
+<h1>Site Framework - Default Menu Data </h1>
+<?php
+
+echo '<table border="1">';
+foreach($menudataarray as $line)
+{
+  echo '<tr>';
+  $linesplit=split(',',$line);
+  foreach($linesplit as $element)
+  {
+  echo '<td>';
+  echo $element;
+  echo '</td>';
+  
+  }
+  echo '</tr>';
+}
+echo '</table>';
+?>
+<hr size="1"/>
+<h1>Site Framework - Default Dir Config Data </h1>
+<?php
+$filecontents=file($defaultdirconfigfile);
+echo '<table border="1">';
+foreach($filecontents as $line)
+{
+  echo '<tr>';
+  $linesplit=split(',',$line);
+  foreach($linesplit as $element)
+  {
+  echo '<td>';
+  if($element=='')echo '<p style="color: #AAAAAA">[no value in file]</p>'; else echo $element;
+  echo '</td>';
+  
+  }
+  echo '</tr>';
+}
+echo '</table>';
+
+?>
+
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+<meta http-equiv="Content-Language" content="en"/>
+<title><?php echo SF_GetPageTitle("breadcrumb"); ?></title>
+		<?php
+		/* to make CSS cascade/combine they must be titled the same */
+    echo "<link href=\"".SF_GetDefaultCSSFilename()."\" rel=\"stylesheet\" title=\"SF_CSS\" type=\"text/css\"/>";
+    echo "<link href=\"".SF_GetCSSFilename()."\" rel=\"stylesheet\" title=\"SF_CSS\" type=\"text/css\"/>"; 
+    ?>
+</head>
+<body>
+<h1><?php echo SF_GetPageTitle("breadcrumb"); ?></h1>
+<hr size="1">

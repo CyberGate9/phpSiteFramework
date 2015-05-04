@@ -1,0 +1,194 @@
+body, h1, h2, h3, h4, h5, h6, ol, ul, li, p {
+	font-family: sans-serif;
+}
+p, ul, li {
+
+	font-size: 9pt;
+}
+a:link {
+}
+a:visited {
+}
+a:active {
+}
+a:hover {
+/*hover doesn't work in nn4*/
+}
+h1 {
+	font-size: 13pt;
+	font-weight: bold;
+}
+h2 {
+	font-size: 11pt;
+	font-weight: bold;
+}
+h3 {
+	font-size: 10pt;
+	font-weight: bold;
+}
+h4 {
+	font-size: 9pt;
+	font-weight: bold;
+}
+pre {
+	font-family: monospace;
+}
+strong, b {
+	font-weight: bold;
+}
+/***** SF divs/styles for header area */
+.SF_headerarea {
+	margin: -8px 0px 0px 0px;
+
+}
+.SF_header_heading {
+	font-size: 15pt;
+	font-weight: bold;
+	margin: 0px 0px 0px 0px;
+}
+.SF_header_optionstext , .SF_header_optionstext a:link, .SF_header_optionstext a:visited {
+	font-size: 8pt;
+	text-align: right;
+	margin: 0px 0px 0px 0px;
+}
+/***** SF styles for content area*/
+.SF_content_headertext , .SF_content_headertext a:link, .SF_content_headertext a:visited {
+	font-size: 7pt;
+	text-align: right;
+	margin: 0px 0px -1px 0px;
+}
+.SF_content_footertext, .SF_content_footertext a:link, .SF_content_footertext a:visited {
+	font-size: 7pt;
+	text-align: right;
+	margin: 5px 0px 0px 0px;
+}
+/***** SF styles for breadcrumb line*/
+.SF_breadcrumbarea {
+	margin: 0px 0px 0px 0px;
+
+}
+.SF_breadcrumb_line {
+	margin: 0px 0px 0px 0px;
+}
+.SF_breadcrumb_title {
+	margin: 0px 0px 0px 0px;
+}
+.SF_breadcrumb_item, .SF_breadcrumb_item a:link, .SF_breadcrumb_item a:visited {
+	margin: 0px 0px 0px 0px;
+	color: #449944;
+	text-decoration: none;
+}
+.SF_breadcrumb_item a:hover {
+	color: #0000FF;
+}
+/***** SF styles for menus */
+.SF_menuarea {
+	margin: 5px 0px 0px 0px;
+}
+.SF_menu_level_1, .SF_menu_level_1 a:link, .SF_menu_level_1 a:visited {
+	color: #000000;
+	margin: 1px 0px 4px 0px;
+	text-decoration: none;
+}
+.SF_menu_level_1_highlight {
+	color: #FF0000;
+	margin: 1px 0px 4px 0px;
+	text-decoration: none;
+}
+.SF_menu_level_1_highlight a:link, .SF_menu_level_1_highlight a:visited {
+	color: #FF0000;
+	margin: 1px 0px 4px 0px;
+	text-decoration: none;
+}
+.SF_menu_level_1 a:hover, .SF_menu_level_1_highlight a:hover {
+	color: #0000FF;
+}
+.SF_menu_level_2, .SF_menu_level_2 a:link, .SF_menu_level_2 a:visited {
+	color: #449944;
+	margin: 3px 0px 2px 15px;
+	text-indent: -15px;
+	text-decoration: none;
+}
+.SF_menu_level_2_highlight {
+	color: #FF0000;
+	margin: 3px 0px 2px 15px;
+	text-indent: -15px;
+	text-decoration: none;
+}
+.SF_menu_level_2_highlight a:link, .SF_menu_level_2_highlight a:visited {
+	color: #FF0000;
+	margin: 3px 0px 2px 15px;
+	text-indent: -15px;
+	text-decoration: none;
+}
+.SF_menu_level_2 a:hover,  .SF_menu_level_2_highlight a:hover {
+	color: #0000FF;
+}
+.SF_offsite_link, .SF_offsite_link a:link, .SF_offsite_link a:visited {
+	color: #999999;
+}
+.SF_offsite_link a:hover {
+	color: #0000FF;
+}
+/***** SF styles for footer area*/
+.SF_footerarea {
+	height: 800px;
+}
+.SF_footer_text {
+	font-size: 8pt;
+	margin: 0px 0px 0px 0px;
+}
+/***** SF styles for site map */
+.SF_map_level_1, .SF_map_level_1 a:link, .SF_map_level_1 a:visited {
+	font-size: 11pt;
+	color: #000000;
+	font-weight: bold;
+	margin: 1px 0px 1px 20px;
+}
+.SF_map_level_2, .SF_map_level_2 a:link, .SF_map_level_2 a:visited {
+	font-size: 10pt;
+	color: #000000;
+	margin: 1px 0px 1px 35px;
+}
+.SF_map_level_3, .SF_map_level_3 a:link, .SF_map_level_3 a:visited {
+	font-size: 9pt;
+	color: #000000;
+	margin: 1px 0px 1px 50px;
+}
+.SF_map_level_4, .SF_map_level_4 a:link, .SF_map_level_4 a:visited {
+	font-size: 8pt;
+	color: #000000;
+	margin: 1px 0px 1px 65px;
+}
+.SF_map_level_5, .SF_map_level_5 a:link, .SF_map_level_5 a:visited {
+	font-size: 8pt;
+	color: #000000;
+	margin: 1px 0px 1px 80px;
+}
+.SF_map_level_6, .SF_map_level_6 a:link, .SF_map_level_6 a:visited {
+	font-size: 8pt;
+	color: #000000;
+	margin: 1px 0px 1px 95px;
+}
+/***** SF Styles for errors, debugging, timing etc */
+.SF_debug_text {
+	font-family: sans-serif;
+	font-size: 7pt;
+	color: #009900;
+	margin: 0px 0px 0px 0px;
+}
+.SF_error_text {
+	font-family: sans-serif;
+	font-size: 10pt;
+	font-weight: bold;
+	color: #FF0000;
+	margin: 0px 0px 0px 0px;
+}
+.SF_timing_text {
+	font-family: sans-serif;
+	font-size: 7pt;
+	color: #990000;
+	margin: 0px 0px 0px 0px;
+	text-align: right;
+}
+ 
